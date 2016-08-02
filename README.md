@@ -1,17 +1,17 @@
 ﻿ZipBomb
 =======
 
-The result fo attempting to create an insanely large zip bomb,
-a file that is so large, there is no storage big enough to hold the extracted contents.
+The result of attempting to create an insanely large zip bomb,
+a file that is so large, there is no storage big enough to hold the extracted contents ever.
 
 How to
 ======
 
 The procedure is simple:
 
-1. Create a 4 Gigabyte (4*1024*1024*1024 Bytes) file and compress it once. Name it "Base.zip"
-2. Copy the compressed file until you have 16 pieces, named 0.zip, 1.zip, ..., 9.zip, a.zip, b.zip, ..., f.zip
-3. Compress the 16 created zip files and overwrite Base.zip with the result.
+1. Create a 4 Gigabyte (`4*1024*1024*1024` Bytes) file and compress it once. Name it `Base.zip`
+2. Copy the compressed file until you have 16 pieces, named `0.zip`, `1.zip`, ..., `9.zip`, `a.zip`, `b.zip`, ..., `f.zip`
+3. Compress the 16 created zip files and overwrite `Base.zip` with the result.
 4. Repeat step 2 and 3 until satisfied.
 
 Exponential growth
@@ -19,6 +19,7 @@ Exponential growth
 
 This will achieve exponential growth.
 Even on the first level you already have 16 4GB files, resulting in 64 GB total.
+To put this into perspective, this is half of what the biggest known BluRay disc can store and larger than a 4K Movie.
 
 Next levels
 -----------
