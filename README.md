@@ -152,7 +152,7 @@ Conclusions
 How to verify
 -------------
 
-The last level (34.zip) is made up of over 87 duodecillion archives (Number with 41 digits),
+The last level (`34.zip`) is made up of over 87 duodecillion archives (Number with 41 digits),
 scanning this recursively would be impractical.
 To verify this we use the fact, that zip archives store the CRC sum of a file.
 A CRC sum is a 32 bit integer that is calculated from the content of a file.
@@ -174,6 +174,12 @@ which shows that improvement is needed in those programs, because it essentially
 Proof: [Virustotal: 34.zip](https://www.virustotal.com/en/file/ff5a0c21f83c9554b0bb9bcd1a41c707a56528e550fb7f8bd9a87f7621a17171/analysis/1470177174/)
 
 You will find, that many scanners timed out, including common scanners like comodo, eset-nod32 and McAfee.
+
+Only 3 scanners consider the zip bomb a problem.
+It is not really a problem because you can only extract 16 archives at a time.
+I know you should never underestimate your average user but I doubt most have the time and effort to completely extract all archives.
+
+The only problem could arise, if a zip extractor attempts to extract all levels at once.
 
 Archive Generator Infrastructure
 ================================
